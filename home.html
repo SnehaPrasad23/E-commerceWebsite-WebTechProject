@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style> 
+        body{
+            margin:0;
+        }
+       
+        .dropdown-content{
+            display:none;
+            margin:0;
+            position:absolute;
+            z-index:1;
+            background-color:bisque;
+           
+        }
+        .dropdown-content a{
+            text-align:center;
+            text-decoration:none;
+            padding:14px 16px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+        .dropdown:hover{
+            color:darkmagenta;
+        }
+        #ani {
+        background-image: url("/images/summerbackgrd.jpg");
+        width:100%;
+        height:500px;
+        background-size:cover;
+        position: relative;
+        display: flex; 
+        flex-direction:initial;
+        align-items: flex-start;
+        justify-content: center; 
+        animation: mymove 15s infinite;
+        }
+
+        @keyframes mymove {
+            0%   {
+                background-image: url("/images/fashionback.jpg");
+            }
+            20% {
+                background-image: url("/images/summerbackgrd2.jpg")
+            }
+            40%  {
+                background-image: url("/images/back3.png");
+            }
+            60% {
+                background-image: url("/images/back5.png");
+            }
+            80%  {
+                background-image: url("/images/back2.webp");
+            }
+            100% {
+                background-image:url("/images/back4.jpg");
+            }
+
+        }
+        ul{
+            list-style-type:none;
+            background-color:rgb(98, 141, 227);
+            margin:0;
+            margin-bottom:10px;
+            padding:20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        li{
+            margin:0;
+            cursor:pointer;
+            display:inline-block;
+            color:black;
+            font-size:larger;
+            letter-spacing:2px;
+            padding-left:40px;
+            
+        }
+        li a {
+            font-size:large;
+            display: block;
+            color:darkred;
+            text-decoration:none;
+            padding:10px;
+            padding-left:40px;
+        
+        }
+        li a:hover{
+            font-size:larger;
+        }
+        li:hover{
+            font-size:larger;
+        }
+        div{
+            display: inline-block;
+            
+        }
+        .head1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            font-weight: bolder;
+            
+            padding: 10px;
+            width: 370px;
+            height: 680px;
+           
+            border-radius: 20px;
+
+            
+
+        }
+        .text{
+            font-size: 60px;
+            color: rgba(32, 1, 1, 0.717);
+        }
+        
+
+        .para{
+            font-size: xx-large;
+            color: rgb(4, 32, 113);
+        }
+        .btn{
+            width:250px;
+            height: 60px;
+            font-size: 25px;
+            cursor: pointer;
+            background-color: yellowgreen;
+
+            border-color: rgb(101, 130, 43);
+
+        }
+        </style>
+</head>
+<body>    
+    <header>
+`   <ul>
+        <li class="dropdown">FASHION
+            <p class="dropdown-content">
+                <a href="women.html">Women</a>
+                <a href="men.html">Men</a>
+            </p>
+        </li>
+        <li class="dropdown">GROCERIES
+            <p class="dropdown-content">
+                <a href="staples.html">Staples</a>
+                <a href="snacks.html">Snacks and Beverages</a>
+                <a href="household_care.html">Household Care</a>
+            </p>
+        </li>
+        <li class="dropdown">ELECTRONICS
+            <p class="dropdown-content">
+                <a href="laptops.html">Laptop</a>
+                <a href="tv.html">TV</a>
+            </p>
+        </li>
+    </ul>
+    </header>
+    <div id="ani"></div>
+    <br>
+    <div class="head1"style="background-image: linear-gradient(skyblue,pink);"> <h1 class="text"><i>FASHION</i></h1><img src="/images/fashion_discount.jpeg" width="250" height="250" ><p class="para">Grab the Discounts on your Favourite Brands !</p><button class="btn"><a href="women.html" style="text-decoration:none;">SHOP NOW >></a></button></div>
+
+    <div class="head1"style="background-image: linear-gradient(rgb(247, 237, 147),lightgreen);"> <h1 class="text"><i>ELECTRONICS</i></h1><img src="/images/elec_discount.jpeg" width="250" height="250"><p class="para">Shop Now to get the Best Deal Offers !</p><button class="btn"><a href="laptops.html" style="text-decoration:none;">SHOP NOW >></a></button></div>
+
+    <div class="head1" style="background-image: linear-gradient(rgb(251, 149, 251),rgb(251, 231, 105));"> <h1 class="text"><i>GROCERIES</i></h1><img src="/images/grocery_discount.jpg" width="250" height="250"><p class="para">Hurry!!! Shop Now to grab the Best Deals !</p><button class="btn"><a href="staples.html" style="text-decoration:none;">SHOP NOW >></a></button></div>
+</body>
+</html>
+
